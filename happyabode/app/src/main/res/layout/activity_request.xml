@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background_icon"
+    android:orientation="vertical" >
+
+    <Spinner
+        android:id="@+id/spinner_room"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:entries="@array/room_arrays"
+        android:prompt="@string/type_prompt"
+        android:layout_margin="10dp"
+        android:textSize="18dp"
+        android:spinnerMode="dropdown"
+        android:background="@drawable/spinner_item"
+        android:layout_above="@+id/text_desc"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <Spinner
+        android:id="@+id/spinner_type"
+        android:textColor="#ffffff"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:textSize="18dp"
+        android:background="@drawable/spinner_item"
+        android:entries="@array/type_arrays"
+        android:spinnerMode="dropdown"
+        android:layout_above="@+id/spinner_room"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_alignRight="@+id/spinner_room"
+        android:layout_alignEnd="@+id/spinner_room"
+        android:layout_alignLeft="@+id/spinner_room"
+        android:layout_alignStart="@+id/spinner_room" />
+    <Button
+        android:id="@+id/button_attachment"
+        android:layout_width="50dp"
+        android:onClick="OnButtonClick"
+        android:background="@drawable/application"
+        android:layout_height="50dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/text_desc"
+        android:layout_alignRight="@+id/text_desc"
+        android:layout_alignEnd="@+id/text_desc" />
+
+    <EditText
+        android:id="@+id/text_desc"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:textSize="20dp"
+        android:background="@drawable/edit_text_style"
+        android:layout_alignLeft="@+id/spinner_room"
+        android:layout_alignStart="@+id/spinner_room"
+        android:layout_alignRight="@+id/spinner_room"
+        android:layout_alignEnd="@+id/spinner_room" />
+
+
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="Send"
+        android:background="@drawable/button_send"
+        android:textColor="#ffffff"
+        android:onClick="OnButtonClick"
+        android:textSize="20dp"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="My Request"
+        android:textColor="#ffffff"
+        android:textSize="22dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="Type any time if issue can be fixed any time in the day"
+        android:textStyle="italic"
+        android:textColor="#ffffff"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/textView3"
+        android:layout_below="@+id/button_attachment"
+        />
+
+    <RadioGroup
+        android:id="@+id/radioGroup1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2"
+        android:textSize="20dp"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentStart="true">
+
+
+    <RadioButton
+        android:id="@+id/radio_choosetime"
+        android:layout_width="wrap_content"
+        android:textColor="#ffffff"
+        android:layout_height="wrap_content"
+        android:text="@string/radio_choosetime"
+        android:checked="false"
+        android:textSize="20dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    </RadioGroup>
+    <EditText
+        android:id="@+id/editText_time"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:ems="10"
+        android:maxLength="10"
+        android:textSize="20dp"
+        android:background="@drawable/edit_text_style"
+        android:visibility="invisible"
+        android:layout_below="@+id/radioGroup1"
+        android:layout_alignLeft="@+id/radioGroup1"
+        android:layout_marginLeft="35dp"/>
+
+</RelativeLayout>

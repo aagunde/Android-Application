@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">happyabode</string>
+    <string name="type_prompt">Type</string>
+
+    <string-array name="type_arrays">
+        <item>Water</item>
+        <item>Gas</item>
+        <item>Bugs</item>
+        <item>Heat</item>
+        <item>Electricity</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="room_arrays">
+        <item>Bathroom</item>
+        <item>Livingroom</item>
+        <item>Bedroom</item>
+        <item>Kitchen</item>
+    </string-array>
+    <string name="radio_anytime">Anytime</string>
+    <string name="radio_choosetime">Choosetime</string>
+    <string name="radio_enter_apartment">Enter Apartment</string>
+    <string name="radio_all_apartments">All</string>
+</resources>

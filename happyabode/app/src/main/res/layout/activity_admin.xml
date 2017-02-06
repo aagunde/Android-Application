@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/loginpage"
+    android:orientation="vertical"
+    tools:context="com.sampleappkiranjatty.happyabode.Admin">
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="My Requests"
+        android:layout_weight="1"
+        android:id="@+id/button_myrequest"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:onClick="OnButtonClick"
+        android:background="@drawable/requests_admin"
+        android:layout_above="@+id/button_register_main"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:text="Add Announcements"
+        android:layout_weight="1"
+        android:id="@+id/button_announcement"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:onClick="OnButtonClick"
+        android:background="@drawable/add_announcement"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:textColor="#000000"
+        android:text="Register"
+        android:layout_weight="1"
+        android:layout_height="140dp"
+        android:background="@drawable/register_admin"
+        android:id="@+id/button_register_main"
+        android:textSize="20dp"
+        android:onClick="OnButtonClick"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+</LinearLayout>

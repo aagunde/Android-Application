@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sampleappkiranjatty.happyabode">
+
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/application"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Common" />
+        <activity android:name=".Request" />
+        <activity android:name=".Admin" />
+        <activity android:name=".admin_requests" />
+        <activity android:name=".adapter_item" />
+        <activity android:name=".description_request" />
+        <activity android:name=".register" />
+        <activity android:name=".request_history" />
+        <activity android:name=".change_password" />
+        <activity android:name=".request_adapter_item" />
+        <activity android:name=".view_image" />
+        <activity android:name=".add_announcement" />
+        <activity android:name=".get_announcement" />
+        <activity android:name=".description_request_tenant"></activity>
+    </application>
+
+</manifest>
